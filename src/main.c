@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
 		r = _div(atof(a), atof(b));
 		printf("%lf",r);
 	}
-	else if (strcmp(op, "carre") == 0) {
+	else if (strcmp(op, "calculator") == 0) {
 		r = _calculator(atof(a));
 		printf("%lf",r);
 	}
