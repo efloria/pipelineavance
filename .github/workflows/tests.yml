@@ -87,8 +87,8 @@ jobs:
         run: |
           cd build
           set -e
-          echo "== Test carré 10 ==" > reportcar.txt
-          ./src/calculator calculator 10 | tee -a reportcar.txt
+          echo "== Test carré 2 ==" > reportcar.txt
+          ./src/calculator calculator 2 | tee -a reportcar.txt
           echo "Exit code: $?" >> reportcar.txt
  
       - name: Upload report as artifact
