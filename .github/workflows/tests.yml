@@ -38,7 +38,7 @@ jobs:
           echo "Exit code: $?" >> report.txt
  
       - name: Upload report as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact1@v4
         with:
           name: test-add-report
           path: build/report.txt      # <-- le fichier à récupérer
