@@ -90,9 +90,11 @@ jobs:
           ./src/calculator calculator 10
 
   Deployment:
-    runs-on: ubuntu-latest
-    needs: Compilation
     steps:
-      - name: Echo deploiement
-        run: |
-          echo "Déploiement de la solution"
+      - name: deployment
+        runs-on: ubuntu-latest
+        needs: Compilation
+        steps:
+          - name: Echo deploiement
+            run: |
+              echo "Déploiement de la solution"
